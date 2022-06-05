@@ -190,8 +190,11 @@ const App = () => {
 	
 	useEffect(() => {
 		createBoard();
-		
-		prepareScore();
+
+		setTimeout(() => {
+			prepareScore();
+		}, 2000);
+
 	}, []);
 
 	useEffect(() => {
